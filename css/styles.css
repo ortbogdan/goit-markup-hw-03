@@ -39,10 +39,15 @@ p {
   border-bottom: 1px solid rgb(236, 236, 236);
   outline: 1px solid tomato;
 }
+.top .container {
+  display: flex;
+  justify-content: space-between;
+}
 /*Logo*/
 
 .logo {
   width: 145px;
+  padding: 24px 0px;
 
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
@@ -74,6 +79,10 @@ p {
   margin-right: 50px;
 }
 .menu-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 31px;
+
   text-decoration: none;
 
   color: rgb(33, 33, 33);
@@ -87,6 +96,8 @@ p {
 }
 /*Contacts*/
 .contacts-list {
+  display: flex;
+
   list-style: none;
   font-weight: 500;
   line-height: 1.14;
@@ -95,6 +106,10 @@ p {
   outline: 1px solid tomato;
 }
 .contacts-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 31px;
+
   text-decoration: none;
 
   color: inherit;
@@ -153,9 +168,9 @@ p {
 }
 .hero-button {
   border-radius: 4px;
-  padding: 10px 27px 10px 37px;
+  padding: 8px 25px 8px 35px;
 
-  font-family: inherit;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
