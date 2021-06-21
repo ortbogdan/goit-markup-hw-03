@@ -13,39 +13,36 @@ body {
 
   color: var(--page-text-color);
 }
-ul {
+h1,
+h2,
+h3,
+ul,
+p {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
 }
-/*Header*/
-.top {
-  display: flex;
-  align-items: center;
-  padding-left: 200px;
-  padding-right: 200px;
-  width: 1600px;
-  height: 80px;
-
-  outline: 2px solid tomato;
-}
-/*Logo*/
-.top-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
+.container {
   width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 
-  outline: 2px solid tomato;
+  outline: 1px solid tomato;
 }
+/*Header*/
+
+.top {
+  border-bottom: 1px solid rgb(236, 236, 236);
+  outline: 1px solid tomato;
+}
+/*Logo*/
+
 .logo {
   width: 145px;
-  
 
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
@@ -55,14 +52,13 @@ ul {
   letter-spacing: 0.03em;
 
   color: rgb(0, 0, 0);
-  outline: 2px solid tomato;
+  outline: 1px solid tomato;
 }
 .logo-web {
   color: var(--page-color-second);
 }
 /*Navigation*/
 .menu {
-  
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -72,15 +68,11 @@ ul {
 
   list-style: none;
 
-  outline: 2px solid tomato;
+  outline: 1px solid tomato;
 }
 .menu-list .item:not(:last-child) {
   margin-right: 50px;
 }
-
-
-
-
 .menu-link {
   text-decoration: none;
 
@@ -95,29 +87,28 @@ ul {
 }
 /*Contacts*/
 .contacts-list {
-  display: flex;
-
-  /* margin-left: auto; */
-
   list-style: none;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  outline: 1px solid tomato;
 }
 .contacts-link {
   text-decoration: none;
 
   color: inherit;
 }
-/* .contacts-link:last-child {
-  margin-left: 50px; */
-}
+
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--page-color-second);
 }
-
+.contacts-list .item + .item {
+  margin-left: 50px;
+}
 /*Footer*/
+
 .bottom {
   background-color: var(--page-bgcolor);
 }
@@ -161,13 +152,13 @@ ul {
   color: var(--page-color-first);
 }
 .hero-button {
+  border-radius: 4px;
+  padding: 10px 27px 10px 37px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 
