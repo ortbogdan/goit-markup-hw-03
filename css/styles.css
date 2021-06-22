@@ -134,6 +134,7 @@ p {
 /*Footer*/
 .bottom {
   padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--page-bgcolor);
 }
 .bottom .logo {
@@ -290,20 +291,29 @@ p {
 /*Portfolio*/
 /*Search button*/
 .search-list {
+  display: flex;
+  justify-content: center;
+
   list-style: none;
 }
 .search-bt {
-  font-family: inherit;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px 6px 22px;
+
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: inherit;
-
-  cursor: pointer;
-
   color: rgb(33, 33, 33);
   background-color: rgb(245, 244, 250);
+
+  cursor: pointer;
+}
+.search-list > .search-item:not(:last-child) {
+  margin-right: 8px;
 }
 .active-bt {
   color: var(--page-color-first);
@@ -316,10 +326,21 @@ p {
 }
 /*Portfolio list*/
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
   list-style: none;
 }
 .portfolio-link {
   text-decoration: none;
+}
+.portfolio-item {
+  outline: 1px solid tomato;
+  flex-basis: calc(100% / 3);
+}
+.portfolio-pic {
+  display: block;
 }
 
 .title-prt {
