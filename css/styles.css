@@ -22,7 +22,7 @@ p {
   margin-right: 0;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0;
+  padding: 0 0 0 0;
 }
 .container {
   width: 1200px;
@@ -33,9 +33,18 @@ p {
 
   outline: 1px solid tomato;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  outline: 1px solid tomato;
+}
 /*Header*/
 
-.top {
+.section.top {
+  padding-top: 0;
+  padding-bottom: 0;
+
   border-bottom: 1px solid rgb(236, 236, 236);
   outline: 1px solid tomato;
 }
@@ -155,6 +164,10 @@ p {
 
 /*Hero*/
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
   background-color: var(--page-bgcolor);
 }
 .hero-title {
@@ -166,10 +179,13 @@ p {
   text-transform: uppercase;
 
   color: var(--page-color-first);
+  outline: 1px solid tomato;
 }
 .hero-button {
+  border: none;
   border-radius: 4px;
-  padding: 8px 25px 8px 35px;
+  padding: 10px 27px 10px 37px;
+  margin-top: 30px;
 
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -182,6 +198,7 @@ p {
 
   color: var(--page-color-first);
   background-color: var(--page-color-second);
+  outline: 1px solid tomato;
 }
 /*Main*/
 .title {
@@ -196,32 +213,72 @@ p {
 /*Section benefits*/
 
 .benefits-list {
+  display: flex;
+
   list-style: none;
 }
+.benefits-item {
+  width: 270px;
+}
+.benefits-list .benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+.title.none {
+  display: none;
+}
 .benefits-item .title {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   text-align: left;
 }
 /*Section Workshop*/
-
+.section.workshop {
+  padding-top: 0;
+}
 .workshop-list {
+  display: flex;
+  margin-top: 50px;
   list-style: none;
+  outline: 1px solid tomato;
+}
+.workshop-list .workshop-item:not(:last-child) {
+  margin-right: 30px;
+}
+.workshop-pic {
+  display: block;
 }
 /*Section Team*/
 .team {
   background-color: rgb(245, 244, 250);
 }
 .team-list {
+  display: flex;
+  margin-top: 50px;
+
   list-style: none;
 }
+.team-item .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
 .team-item {
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 
   background-color: rgb(255, 255, 255);
+}
+.team-pic {
+  display: block;
+}
+.team-list .team-item:not(last-child) {
+  margin-right: 30px;
 }
 .team-list .title {
   font-weight: 500;
