@@ -124,7 +124,6 @@ p {
 
   color: inherit;
 }
-
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--page-color-second);
@@ -133,14 +132,17 @@ p {
   margin-left: 50px;
 }
 /*Footer*/
-
 .bottom {
+  padding-top: 60px;
   background-color: var(--page-bgcolor);
 }
 .bottom .logo {
+  padding: 0 0;
   color: var(--page-color-first);
 }
 .post {
+  margin-top: 20px;
+
   list-style: none;
 
   font-style: normal;
