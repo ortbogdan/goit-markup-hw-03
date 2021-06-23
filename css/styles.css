@@ -240,7 +240,7 @@ img {
   margin-right: 30px;
 }
 .title.none {
-  display: none;
+  visibility: hidden;
 }
 .benefits-item .title {
   margin-bottom: 10px;
