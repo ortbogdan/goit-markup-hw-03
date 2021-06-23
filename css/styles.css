@@ -1,4 +1,5 @@
 :root {
+  --page-gap: 30px;
   --page-text-color: rgb(117, 117, 117);
   --page-bgcolor: rgb(47, 48, 58);
   --page-color-first: rgb(255, 255, 255);
@@ -16,14 +17,26 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 ul,
 p {
-  margin-left: 0;
-  margin-right: 0;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0 0 0 0;
 }
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -248,11 +261,9 @@ p {
   outline: 1px solid tomato;
 }
 .workshop-list .workshop-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--page-gap);
 }
-.workshop-pic {
-  display: block;
-}
+
 /*Section Team*/
 .team {
   background-color: rgb(245, 244, 250);
@@ -277,9 +288,6 @@ p {
 
   background-color: rgb(255, 255, 255);
 }
-.team-pic {
-  display: block;
-}
 .team-list .team-item:not(last-child) {
   margin-right: 30px;
 }
@@ -293,6 +301,8 @@ p {
 .search-list {
   display: flex;
   justify-content: center;
+  padding-bottom: 16px;
+  margin-bottom: 34px;
 
   list-style: none;
 }
@@ -326,9 +336,10 @@ p {
 }
 /*Portfolio list*/
 .portfolio-list {
+  margin-top: calc(-1 * var(--page-gap));
+  margin-left: calc(-1 * var(--page-gap));
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
 
   list-style: none;
 }
@@ -336,13 +347,18 @@ p {
   text-decoration: none;
 }
 .portfolio-item {
-  outline: 1px solid tomato;
-  flex-basis: calc(100% / 3);
+  flex-basis: calc(100% / 3 - var(--page-gap));
+  margin-top: var(--page-gap);
+  margin-left: var(--page-gap);
 }
-.portfolio-pic {
-  display: block;
+.portfolio-box {
+  padding-top: 20px;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-bottom: 19px;
+  border: 1px solid rgb(238, 238, 238);
+  border-top: none;
 }
-
 .title-prt {
   font-weight: 700;
   font-size: 18px;
@@ -352,6 +368,8 @@ p {
   color: rgb(33, 33, 33);
 }
 .descr-prt {
+  margin-top: 4px;
+
   font-size: 16px;
   line-height: 1.87;
 
