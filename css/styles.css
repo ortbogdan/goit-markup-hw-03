@@ -36,38 +36,31 @@ img {
   width: 100%;
   height: auto;
 }
-
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  outline: 1px solid tomato;
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-
-  outline: 1px solid tomato;
 }
-/*Header*/
 
+/*== Header ==*/
 .section.top {
   padding-top: 0;
   padding-bottom: 0;
 
   border-bottom: 1px solid rgb(236, 236, 236);
-  outline: 1px solid tomato;
 }
 .top .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
-/*Logo*/
 
+/*== Logo ==*/
 .logo {
   width: 145px;
   padding: 24px 0px;
@@ -80,13 +73,15 @@ img {
   letter-spacing: 0.03em;
 
   color: rgb(0, 0, 0);
-  outline: 1px solid tomato;
 }
 .logo-web {
   color: var(--page-color-second);
 }
-/*Navigation*/
+
+/*== Navigation ==*/
 .menu {
+  margin-left: 93px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -95,8 +90,6 @@ img {
   display: flex;
 
   list-style: none;
-
-  outline: 1px solid tomato;
 }
 .menu-list .item:not(:last-child) {
   margin-right: 50px;
@@ -117,16 +110,16 @@ img {
 .active {
   color: var(--page-color-second);
 }
-/*Contacts*/
+
+/*== Contacts ==*/
 .contacts-list {
   display: flex;
+  margin-left: auto;
 
   list-style: none;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  outline: 1px solid tomato;
 }
 .contacts-link {
   display: block;
@@ -144,7 +137,8 @@ img {
 .contacts-list .item + .item {
   margin-left: 50px;
 }
-/*Footer*/
+
+/*== Footer ==*/
 .bottom {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -178,7 +172,7 @@ img {
   color: var(--page-color-second);
 }
 
-/*Hero*/
+/*== Hero ==*/
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -195,7 +189,6 @@ img {
   text-transform: uppercase;
 
   color: var(--page-color-first);
-  outline: 1px solid tomato;
 }
 .hero-button {
   border: none;
@@ -214,9 +207,9 @@ img {
 
   color: var(--page-color-first);
   background-color: var(--page-color-second);
-  outline: 1px solid tomato;
 }
-/*Main*/
+
+/*== Main ==*/
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -226,8 +219,7 @@ img {
   color: rgb(33, 33, 33);
 }
 
-/*Section benefits*/
-
+/*== Section benefits ==*/
 .benefits-list {
   display: flex;
 
@@ -262,13 +254,12 @@ img {
   display: flex;
   margin-top: 50px;
   list-style: none;
-  outline: 1px solid tomato;
 }
 .workshop-list .workshop-item:not(:last-child) {
   margin-right: var(--page-gap);
 }
 
-/*Section Team*/
+/*== Section Team ==*/
 .team {
   background-color: rgb(245, 244, 250);
 }
@@ -300,8 +291,9 @@ img {
   font-size: 16px;
   line-height: 1.19;
 }
-/*Portfolio*/
-/*Search button*/
+
+/*=== Portfolio ===*/
+/*== Search button ==*/
 .search-list {
   display: flex;
   justify-content: center;
