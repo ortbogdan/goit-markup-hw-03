@@ -239,8 +239,12 @@ img {
 .benefits-list .benefits-item:not(:last-child) {
   margin-right: 30px;
 }
-.title.none {
-  visibility: hidden;
+.title.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 .benefits-item .title {
   margin-bottom: 10px;
