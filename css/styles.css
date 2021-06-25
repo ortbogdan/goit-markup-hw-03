@@ -91,8 +91,8 @@ img {
 
   list-style: none;
 }
-.menu-list .item:not(:last-child) {
-  margin-right: 50px;
+.menu-list .item:not(:first-child) {
+  margin-left: 50px;
 }
 .menu-link {
   display: block;
@@ -145,15 +145,18 @@ img {
   background-color: var(--page-bgcolor);
 }
 .bottom .logo {
+  display: inline-block;
+  margin-bottom: 20px;
   padding: 0 0;
   color: var(--page-color-first);
 }
 .post {
-  margin-top: 20px;
-
   list-style: none;
 
   font-style: normal;
+}
+.post-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .post-office {
   text-decoration: none;
@@ -181,6 +184,7 @@ img {
   background-color: var(--page-bgcolor);
 }
 .hero-title {
+  margin-bottom: var(--page-gap);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -194,7 +198,6 @@ img {
   border: none;
   border-radius: 4px;
   padding: 10px 27px 10px 37px;
-  margin-top: var(--page-gap);
 
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -255,11 +258,14 @@ img {
 }
 .workshop-list {
   display: flex;
-  margin-top: 50px;
+
   list-style: none;
 }
-.workshop-list .workshop-item:not(:last-child) {
-  margin-right: var(--page-gap);
+.workshop .title {
+  margin-bottom: 50px;
+}
+.workshop-list .workshop-item:not(:first-child) {
+  margin-left: var(--page-gap);
 }
 
 /*== Section Team ==*/
@@ -282,7 +288,7 @@ img {
   flex-basis: calc(100% / 4 - var(--page-gap));
   margin-top: var(--page-gap);
   margin-left: var(--page-gap);
-  padding-bottom: 30px;
+
   border-radius: 0px 0px 4px 4px;
 
   font-size: 16px;
@@ -291,11 +297,11 @@ img {
 
   background-color: rgb(255, 255, 255);
 }
-/* .team-list .team-item:not(:last-child) {
-  margin-right: 30px;
-} */
-.team-item .title {
-  margin-top: 30px;
+.team-box {
+  padding-top: var(--page-gap);
+  padding-bottom: var(--page-gap);
+}
+.team-box .title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
