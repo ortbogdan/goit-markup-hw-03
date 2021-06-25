@@ -194,7 +194,7 @@ img {
   border: none;
   border-radius: 4px;
   padding: 10px 27px 10px 37px;
-  margin-top: 30px;
+  margin-top: var(--page-gap);
 
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -222,14 +222,16 @@ img {
 /*== Section benefits ==*/
 .benefits-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
 
   list-style: none;
 }
 .benefits-item {
-  width: 270px;
-}
-.benefits-list .benefits-item:not(:last-child) {
-  margin-right: 30px;
+  flex-basis: calc(100% / 4 - var(--page-gap));
+  margin-top: var(--page-gap);
+  margin-left: var(--page-gap);
 }
 .title.visually-hidden {
   position: absolute;
@@ -246,7 +248,8 @@ img {
   text-transform: uppercase;
   text-align: left;
 }
-/*Section Workshop*/
+
+/*==Section Workshop==*/
 .section.workshop {
   padding-top: 0;
 }
@@ -263,17 +266,22 @@ img {
 .team {
   background-color: rgb(245, 244, 250);
 }
+.title.our-team {
+  margin-bottom: 50px;
+}
 .team-list {
   display: flex;
-  margin-top: 50px;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
 
   list-style: none;
 }
-.team-item .title {
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
+
 .team-item {
+  flex-basis: calc(100% / 4 - var(--page-gap));
+  margin-top: var(--page-gap);
+  margin-left: var(--page-gap);
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
 
@@ -283,10 +291,12 @@ img {
 
   background-color: rgb(255, 255, 255);
 }
-.team-list .team-item:not(last-child) {
+/* .team-list .team-item:not(:last-child) {
   margin-right: 30px;
-}
-.team-list .title {
+} */
+.team-item .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
