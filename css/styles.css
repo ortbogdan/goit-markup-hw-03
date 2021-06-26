@@ -313,8 +313,7 @@ img {
 .search-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 16px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 
   list-style: none;
 }
